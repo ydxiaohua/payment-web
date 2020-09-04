@@ -99,6 +99,7 @@ export default {
           _this.codeSt = 2
         }
       },1000)
+
       window.Axios.get('http://localhost:8085/api/member/register/captcha/' + this.phone).then(function (response) {
         if(response.data.code == 0){
           _this.error = '验证码已发送成功'
